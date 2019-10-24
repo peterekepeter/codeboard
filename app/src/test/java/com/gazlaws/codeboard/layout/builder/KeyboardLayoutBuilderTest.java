@@ -16,7 +16,7 @@ public class KeyboardLayoutBuilderTest {
         ArrayList<Key> keyboard = builder().setBox(Box.create(0,0,100,100))
                 .newRow().addKey(1).addKey(1)
                 .newRow().addKey(1).addKey(1).build();
-        assertEquals(5, keyboard.size());
+        assertEquals(4, keyboard.size());
     }
 
     private KeyboardLayoutBuilder builder() {
