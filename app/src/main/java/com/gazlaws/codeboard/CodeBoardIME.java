@@ -558,51 +558,6 @@ public class CodeBoardIME extends InputMethodService
 
     }
 
-    public Keyboard chooseKB(int layout, int toprow, int size, int mode) {
-        Keyboard keyboard;
-        if (layout == 0) {
-
-            if (toprow == 1) {
-
-                if (size == 0) {
-                    keyboard = new Keyboard(this, R.xml.qwerty0r, mode);
-                } else if (size == 1) {
-                    keyboard = new Keyboard(this, R.xml.qwerty1r, mode);
-                } else if (size == 2) {
-                    keyboard = new Keyboard(this, R.xml.qwerty2r, mode);
-                } else keyboard = new Keyboard(this, R.xml.qwerty3r, mode);
-            } else {
-
-                if (size == 0) {
-                    keyboard = new Keyboard(this, R.xml.qwerty0e, mode);
-                } else if (size == 1) {
-                    keyboard = new Keyboard(this, R.xml.qwerty1e, mode);
-                } else if (size == 2) {
-                    keyboard = new Keyboard(this, R.xml.qwerty2e, mode);
-                } else keyboard = new Keyboard(this, R.xml.qwerty3e, mode);
-            }
-        } else {
-            if (toprow == 1) {
-                if (size == 0) {
-                    keyboard = new Keyboard(this, R.xml.azerty0r, mode);
-                } else if (size == 1) {
-                    keyboard = new Keyboard(this, R.xml.azerty1r, mode);
-                } else if (size == 2) {
-                    keyboard = new Keyboard(this, R.xml.azerty2r, mode);
-                } else keyboard = new Keyboard(this, R.xml.azerty3r, mode);
-            } else {
-                if (size == 0) {
-                    keyboard = new Keyboard(this, R.xml.azerty0e, mode);
-                } else if (size == 1) {
-                    keyboard = new Keyboard(this, R.xml.azerty1e, mode);
-                } else if (size == 2) {
-                    keyboard = new Keyboard(this, R.xml.azerty2e, mode);
-                } else keyboard = new Keyboard(this, R.xml.azerty3e, mode);
-            }
-        }
-        return keyboard;
-    }
-
     @Override
     public View onCreateInputView() {
 
