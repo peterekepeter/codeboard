@@ -25,7 +25,7 @@ public class UiTheme {
     public static UiTheme buildFromInfo(ThemeInfo info){
         UiTheme theme = new UiTheme();
         theme.portraitSize = info.size;
-        theme.landscapeSize = info.size;
+        theme.landscapeSize = info.sizeLandscape;
         theme.enablePreview = info.enablePreview;
         // background
         theme.backgroundColor = info.backgroundColor;
